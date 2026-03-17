@@ -3,9 +3,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    android:clipChildren="false"
+    android:clipToPadding="false">
 
-    <!-- CONTENU PRINCIPAL (SANS SCROLL) -->
+    <!-- CONTENU PRINCIPAL -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,7 +16,6 @@
         android:padding="16dp"
         android:baselineAligned="false">
 
-        <!-- TITRE -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,17 +25,16 @@
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
-        <!-- IMAGE -->
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:layout_marginTop="12dp"
             android:scaleType="centerCrop"
             android:src="@drawable/back"
             android:background="@drawable/rounded_image"
+            android:clipToOutline="true"
             android:contentDescription="header"/>
 
-        <!-- ACTIONS -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,6 @@
             android:layout_marginTop="10dp"
             android:weightSum="2">
 
-            <!-- GALERIE a -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -75,7 +74,6 @@
                     android:textStyle="bold"/>
             </LinearLayout>
 
-            <!-- SCANNER -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -97,11 +95,9 @@
                     android:text="Scanner"
                     android:textColor="#000000"
                     android:textStyle="bold"/>
-
             </LinearLayout>
         </LinearLayout>
 
-        <!-- MODELE -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -134,7 +130,6 @@
                 android:layout_marginStart="12dp"/>
         </LinearLayout>
 
-        <!-- POSTERS -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -178,72 +173,82 @@
                     android:text="1 Pages"
                     android:textColor="#777777"/>
             </LinearLayout>
-
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- BOTTOM BAR  s -->
+    <!-- BOTTOM BAR -->
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_bg">
+        android:background="@drawable/bottom_bg"
+        android:clipChildren="false"
+        android:clipToPadding="false">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center"
-            android:weightSum="5"
-            android:paddingTop="20dp">
+            android:weightSum="5">
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="24dp"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/ecohouse"
                 android:contentDescription="home"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="24dp"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/ai"
                 android:contentDescription="ai"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="24dp"
+                android:layout_height="30dp"
                 android:layout_weight="1"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="24dp"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/folder"
                 android:contentDescription="folder"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="24dp"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/engineer"
                 android:contentDescription="settings"/>
         </LinearLayout>
 
-
-        <ImageView
+        <!-- EFFET CREUX -->
+        <View
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="-35dp"
+            android:background="@drawable/notch_bg"
+            android:elevation="6dp"/>
+
+        <!-- BOUTON CAMERA -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-25dp"
             android:background="@drawable/fab_circle"
-            android:elevation="10dp"
-            android:padding="18dp"
+            android:elevation="12dp"
+            android:padding="13dp"
             android:src="@drawable/diaphragme"
             android:contentDescription="camera"/>
+
     </RelativeLayout>
 
 </RelativeLayout>
