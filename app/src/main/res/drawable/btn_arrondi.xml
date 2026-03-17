@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#4CAF50" /> <!-- Votre couleur verte -->
+    <corners android:radius="150dp" /> <!-- Ajustez l'arrondi ici -->
+</shape>
+
