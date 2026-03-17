@@ -51,13 +51,17 @@
             android:layout_marginTop="10dp"
             android:weightSum="2">
 
+            <!-- Bouton Galerie -->
             <LinearLayout
+                android:id="@+id/btnGalerie"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/card_bg"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_marginEnd="6dp">
 
                 <ImageView
@@ -74,13 +78,17 @@
                     android:textStyle="bold"/>
             </LinearLayout>
 
+            <!-- Bouton Scanner -->
             <LinearLayout
+                android:id="@+id/btnScanner"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/card_bg"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_marginStart="6dp">
 
                 <ImageView
@@ -239,6 +247,7 @@
 
         <!-- BOUTON CAMERA -->
         <ImageView
+            android:id="@+id/btnCamera"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
@@ -247,7 +256,9 @@
             android:elevation="12dp"
             android:padding="13dp"
             android:src="@drawable/diaphragme"
-            android:contentDescription="camera"/>
+            android:contentDescription="camera"
+            android:clickable="true"
+            android:focusable="true"/>
 
     </RelativeLayout>
 
