@@ -182,7 +182,7 @@
 
     </LinearLayout>
 
-    <!-- BOTTOM BAR -->
+    <!-- BOTTOM BAR  s -->
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
