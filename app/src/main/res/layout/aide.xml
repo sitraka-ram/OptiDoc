@@ -88,12 +88,13 @@
         android:id="@+id/imgMultiEspeces"
         android:layout_width="110dp"
         android:layout_height="110dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="75dp"
-        android:layout_marginRight="275dp"
+        android:layout_marginEnd="1dp"
         android:layout_marginBottom="92dp"
         app:cardCornerRadius="125dp"
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgTropLoin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMaki">
 
@@ -108,10 +109,9 @@
         android:id="@+id/imgNo1"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginRight="190dp"
+        android:layout_marginEnd="-5dp"
         app:cardCornerRadius="125dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgMultiEspeces"
         app:layout_constraintTop_toTopOf="@+id/imgMultiEspeces">
 
         <ImageView
@@ -163,13 +163,14 @@
         android:id="@+id/TropPres"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_marginLeft="270dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="75dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="92dp"
         app:cardCornerRadius="125dp"
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgTropLoin"
         app:layout_constraintTop_toBottomOf="@+id/imgMaki">
 
         <ImageView
@@ -184,10 +185,9 @@
         android:id="@+id/imgNo3"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginLeft="360dp"
+        android:layout_marginEnd="-5dp"
         app:cardCornerRadius="125dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TropPres"
         app:layout_constraintTop_toTopOf="@+id/TropPres">
 
         <ImageView
@@ -201,49 +201,51 @@
     <TextView
         android:layout_width="110dp"
         android:layout_height="25dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginRight="275dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
         android:text="Multi-espèces"
+        android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMultiEspeces" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="80dp"
         android:layout_height="25dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:text="Trop loin"
+        android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTropLoin" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="80dp"
         android:layout_height="25dp"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:text="Trop près"
-        android:textSize="17dp"
         android:textColor="@color/black"
+        android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgTropLoin" />
+        app:layout_constraintStart_toStartOf="@+id/TropPres"
+        app:layout_constraintTop_toBottomOf="@+id/TropPres" />
 
     <!--bouton no eto-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/btn_arrondi"
         android:text="Accepter"
