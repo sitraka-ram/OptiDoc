@@ -7,7 +7,5 @@
 
     </style>
 
-
-
     <style name="Theme.OptiDoc" parent="Base.Theme.OptiDoc" />
 </resources>
