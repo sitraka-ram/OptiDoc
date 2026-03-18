@@ -51,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
         ImageView btnCamera = findViewById(R.id.btnCamera);
         btnCamera.setOnClickListener(v -> ouvrirCamera());
 
+        ImageView btnsetting = findViewById(R.id.btnsetting);
+        btnsetting.setOnClickListener(v -> ouvrirSetting());
+
         // Bouton Giraffe PDF → ResultatActivity
         LinearLayout btnGiraffePdf = findViewById(R.id.btnGiraffePdf);
         btnGiraffePdf.setOnClickListener(v -> ouvrirResultat());
@@ -65,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ResultatActivity.class);
         intent.putExtra("animal_name", "Girafe");
         intent.putExtra("source", "pdf_recent");
+        startActivity(intent);
+    }
+    private void ouvrirSetting() {
+        Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
         startActivity(intent);
     }
 
