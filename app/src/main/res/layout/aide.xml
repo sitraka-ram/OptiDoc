@@ -46,7 +46,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/imgCameleon"
+        android:id="@+id/imgMaki"
         android:layout_width="250dp"
         android:layout_height="250dp"
         app:cardCornerRadius="125dp"
@@ -93,7 +93,7 @@
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgCameleon">
+        app:layout_constraintTop_toBottomOf="@+id/imgMaki">
 
         <ImageView
             android:layout_width="match_parent"
@@ -130,7 +130,7 @@
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgCameleon">
+        app:layout_constraintTop_toBottomOf="@+id/imgMaki">
 
         <ImageView
             android:layout_width="match_parent"
@@ -168,7 +168,7 @@
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgCameleon">
+        app:layout_constraintTop_toBottomOf="@+id/imgMaki">
 
         <ImageView
             android:layout_width="match_parent"
