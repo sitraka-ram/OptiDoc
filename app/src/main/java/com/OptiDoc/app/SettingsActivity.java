@@ -33,7 +33,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         controller.hide(WindowInsetsCompat.Type.statusBars());
 
-
+        ///Eto ny spinner langue
         Spinner spinner = findViewById(R.id.langue);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.langues_array, android.R.layout.simple_spinner_item);
