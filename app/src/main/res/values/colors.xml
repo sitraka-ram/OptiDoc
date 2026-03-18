@@ -4,4 +4,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#CFE0E6</color>
     <color name="secondary">#162A7C</color>
+
+    <color name="bg_dark">#1A1033</color>
+    <color name="card_dark">#241848</color>
+    <color name="purple_icon">#7B5EA7</color>
+    <color name="orange">#FF8C00</color>
+    <color name="pink">#E91E8C</color>
+    <color name="teal">#00BCD4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_grey">#AAAAAA</color>
 </resources>
