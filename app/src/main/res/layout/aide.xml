@@ -117,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/No" />
+            android:src="@drawable/no" />
     </androidx.cardview.widget.CardView>
 
 
@@ -156,7 +156,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/No" />
+            android:src="@drawable/no" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -195,7 +195,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/No" />
+            android:src="@drawable/no" />
     </androidx.cardview.widget.CardView>
 
     <!--TextKeli ambanini sary-->
