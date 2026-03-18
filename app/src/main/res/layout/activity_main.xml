@@ -257,7 +257,7 @@
             android:layout_marginTop="-25dp"
             android:background="@drawable/fab_circle"
             android:elevation="12dp"
-            android:padding="13dp"
+            android:padding="9dp"
             android:src="@drawable/diaphragme"
             android:contentDescription="camera"
             android:clickable="true"

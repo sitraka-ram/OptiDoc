@@ -32,8 +32,8 @@
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/camera_bottom_bg"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:orientation="horizontal"
         android:weightSum="3">
 
 
@@ -47,12 +47,12 @@
                 android:id="@+id/btnGalerieCamera"
                 android:layout_width="54dp"
                 android:layout_height="54dp"
-                android:scaleType="centerCrop"
-                android:clipToOutline="true"
                 android:background="@drawable/btn_outline_circle"
                 android:clickable="true"
+                android:clipToOutline="true"
+                android:contentDescription="Galerie"
                 android:focusable="true"
-                android:contentDescription="Galerie"/>
+                android:scaleType="centerCrop" />
         </LinearLayout>
 
         <!-- Bouton Capture vert -->
@@ -67,9 +67,10 @@
                 android:layout_width="66dp"
                 android:layout_height="66dp"
                 android:background="@drawable/btn_green_circle"
+                android:contentDescription="Capturer"
+                android:padding="9dp"
                 android:src="@drawable/diaphragme"
-                android:padding="14dp"
-                android:contentDescription="Capturer"/>
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
         <!-- Bouton Aide -->
@@ -84,14 +85,14 @@
                 android:layout_width="54dp"
                 android:layout_height="54dp"
                 android:background="@drawable/btn_outline_circle"
-                android:text="?"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#555555"
-                android:gravity="center"
                 android:clickable="true"
+                android:contentDescription="Aide"
                 android:focusable="true"
-                android:contentDescription="Aide"/>
+                android:gravity="center"
+                android:text="?"
+                android:textColor="#555555"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
