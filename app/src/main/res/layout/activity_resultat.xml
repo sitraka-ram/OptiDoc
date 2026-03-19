@@ -355,6 +355,7 @@
                 android:src="@drawable/folder" />
 
             <ImageView
+                android:id="@+id/btnsetting"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"

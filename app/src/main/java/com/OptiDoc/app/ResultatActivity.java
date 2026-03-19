@@ -15,6 +15,22 @@ public class ResultatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat);
 
+
+        // ✅ Navigation - icône Accueil → MainActivity
+        ImageView iconHome = findViewById(R.id.iconHome);
+        iconHome.setOnClickListener(v -> {
+            Intent intent = new Intent(ResultatActivity.this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
+        });
+
+        //Ouvrir le setting
+
+        ImageView btnsetting = findViewById(R.id.btnsetting);
+        btnsetting.setOnClickListener(v -> ouvrirSetting());
+
+
         // Bouton Créer Poster
         AppCompatButton btnCreerPoster = findViewById(R.id.btnCreerPoster);
         if (btnCreerPoster != null) {
@@ -37,17 +53,12 @@ public class ResultatActivity extends AppCompatActivity {
             });
         }
 
-        // Bouton Caméra (ImageView, pas FloatingActionButton)
-        ImageView btnCamera = findViewById(R.id.btnCamera);
-        if (btnCamera != null) {
-            btnCamera.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(ResultatActivity.this, "Caméra cliqué", Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
 
 
+    }
+
+    private void ouvrirSetting() {
+        Intent intent = new Intent(ResultatActivity.this, SettingsActivity.class);
+        startActivity(intent);
     }
 }
