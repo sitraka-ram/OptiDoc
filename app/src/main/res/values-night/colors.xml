@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2D2D2D</color>
+    <color name="background">#121212</color>
+    <color name="card_bg">#2A2A3E</color>
+    <color name="bottom_bar">#1E1E3A</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#AAAAAA</color>
+    <color name="card_result_green">#1B3A1B</color>
+    <color name="card_result_blue">#1A2A3A</color>
+    <color name="card_result_orange">#3A2A1A</color>
+</resources>
