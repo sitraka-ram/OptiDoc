@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@color/background">
 
-    <!-- CONTENU PRINCIPAL (SANS SCROLLVIEW) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,23 +13,21 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- LOGO EN HAUT À GAUCHE -->
         <ImageView
             android:layout_width="160dp"
             android:layout_height="30dp"
-            android:src="@drawable/logo"
+            android:src="@drawable/logo_adaptive"
             android:scaleType="fitStart"
             android:layout_gravity="start"
             android:contentDescription="OptiDoc Logo"/>
 
-        <!-- TITRE -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="5dp"
             android:text="Résultat d'analyse"
-            android:textColor="#666666"
+            android:textColor="@color/text_secondary"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -49,14 +46,13 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Résultat principal -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="#E8F5E8">
+            app:cardBackgroundColor="@color/card_result_green">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,7 +82,7 @@
                         android:layout_weight="1"
                         android:text="Nom scientifique :"
                         android:textSize="13sp"
-                        android:textColor="#666666" />
+                        android:textColor="@color/text_secondary" />
 
                     <TextView
                         android:id="@+id/nomScientifique"
@@ -94,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:text="Lemur catta"
                         android:textSize="13sp"
-                        android:textColor="#333333" />
+                        android:textColor="@color/text_primary" />
 
                 </LinearLayout>
 
@@ -104,13 +100,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Confiance IA :"
                         android:textSize="13sp"
-                        android:textColor="#666666" />
+                        android:textColor="@color/text_secondary" />
 
                     <TextView
                         android:id="@+id/confianceIa"
@@ -118,7 +113,7 @@
                         android:layout_height="wrap_content"
                         android:text="75%"
                         android:textSize="13sp"
-                        android:textColor="#333333" />
+                        android:textColor="@color/text_primary" />
 
                 </LinearLayout>
 
@@ -126,7 +121,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Classification -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="79dp"
@@ -138,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Classification"
-                android:textColor="#333333"
+                android:textColor="@color/text_primary"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -152,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="#E3F2FD"
+                    app:cardBackgroundColor="@color/card_result_blue"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
 
@@ -172,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="#E8F5E8"
+                    app:cardBackgroundColor="@color/card_result_green"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
 
@@ -192,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="#FFF3E0"
+                    app:cardBackgroundColor="@color/card_result_orange"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
 
@@ -211,7 +205,6 @@
 
         </LinearLayout>
 
-        <!-- Informations côte à côte -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -231,7 +224,7 @@
                     android:text="Habitat"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/text_primary"
                     android:layout_marginBottom="4dp" />
 
                 <TextView
@@ -240,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:text="Forêts tropicales de Madagascar"
                     android:textSize="13sp"
-                    android:textColor="#666666" />
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -248,7 +241,7 @@
                     android:text="Taille"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/text_primary"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="4dp" />
 
@@ -257,7 +250,7 @@
                     android:layout_height="wrap_content"
                     android:text="40 - 46 cm"
                     android:textSize="13sp"
-                    android:textColor="#666666" />
+                    android:textColor="@color/text_secondary" />
 
             </LinearLayout>
 
@@ -274,7 +267,7 @@
                     android:text="Alimentation"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/text_primary"
                     android:layout_marginBottom="4dp" />
 
                 <TextView
@@ -282,13 +275,12 @@
                     android:layout_height="wrap_content"
                     android:text="Fruits - Insectes"
                     android:textSize="13sp"
-                    android:textColor="#666666" />
+                    android:textColor="@color/text_secondary" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <!-- Boutons d'action (en bas avec layout_weight) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -321,6 +313,8 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <!-- Bottom Bar (même style que settings) -->
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -334,8 +328,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:orientation="horizontal"
             android:weightSum="5">
 
             <ImageView
@@ -343,61 +337,32 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
-                android:src="@drawable/ecohouse"
-                android:contentDescription="home"/>
+                android:contentDescription="home"
+                android:src="@drawable/ecohouse" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
-                android:src="@drawable/ai"
-                android:contentDescription="ai"/>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"/>
+                android:contentDescription="ai"
+                android:src="@drawable/ai" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
-                android:src="@drawable/folder"
-                android:contentDescription="folder"/>
+                android:contentDescription="folder"
+                android:src="@drawable/folder" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
-                android:src="@drawable/engineer"
-                android:contentDescription="settings"/>
+                android:contentDescription="settings"
+                android:src="@drawable/engineer" />
+
         </LinearLayout>
 
-
-        <View
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-35dp"
-            android:background="@drawable/notch_bg"
-            android:elevation="6dp"/>
-
     </RelativeLayout>
-
-
-    <ImageView
-        android:id="@+id/btnCamera"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="35dp"
-        android:background="@drawable/fab_circle"
-        android:elevation="12dp"
-        android:padding="8dp"
-        android:src="@drawable/diaphragme"
-        android:contentDescription="camera"
-        android:clickable="true"
-        android:focusable="true"/>
 
 </RelativeLayout>

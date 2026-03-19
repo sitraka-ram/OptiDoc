@@ -2,29 +2,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/background">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo_adaptive"
         android:foregroundGravity="center"
         android:layout_marginTop="25dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">     
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp" 
-            android:orientation="vertical">   
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
 
-
-
-            <!-- ================= CARD 1 ================= -->
+            <!-- CARD 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,7 +56,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_weight="1"
                         android:text="Mode Sombre"
-                        android:textColor="@color/black"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -68,7 +66,6 @@
                         android:layout_height="48dp" />
                 </LinearLayout>
 
-                <!-- Divider -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -88,7 +85,6 @@
                         android:layout_height="36dp"
                         android:background="@drawable/circle_yellow">
 
-                        <!-- eto ny icon-->
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
@@ -102,7 +98,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_weight="1"
                         android:text="Notifications"
-                        android:textColor="@color/black"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -113,14 +109,13 @@
                         android:checked="false" />
                 </LinearLayout>
 
-                <!-- Divider -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginStart="56dp"
                     android:background="#33FFFFFF" />
 
-                <!-- Private Account -->
+                <!-- Langue -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -133,7 +128,6 @@
                         android:layout_height="36dp"
                         android:background="@drawable/circle_yellow">
 
-                        <!-- Eto ny icon -->
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
@@ -146,13 +140,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
                         android:text="Choisir votre langue"
-                        android:textColor="@color/black"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/langue"
-
                         android:layout_width="match_parent"
                         android:layout_height="48dp" />
                 </LinearLayout>
@@ -167,7 +160,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="16dp" />
 
-            <!-- eto ny card2 -->
+            <!-- CARD 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -175,13 +168,14 @@
                 android:orientation="vertical"
                 android:padding="8dp">
 
-                <!-- Security -->
+                <!-- Modèles IA -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="12dp">
+
                     <FrameLayout
                         android:layout_width="36dp"
                         android:layout_height="36dp"
@@ -200,17 +194,14 @@
                         android:layout_marginStart="12dp"
                         android:layout_weight="1"
                         android:text="Modèles de reconnaissance"
-                        android:textColor="@color/black"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
                         android:src="@drawable/fleche" />
-
 
                 </LinearLayout>
 
@@ -220,7 +211,7 @@
                     android:layout_marginStart="56dp"
                     android:background="#33FFFFFF" />
 
-                <!-- Text Size -->
+                <!-- Historique -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -246,17 +237,14 @@
                         android:layout_marginStart="12dp"
                         android:layout_weight="1"
                         android:text="Historique"
-                        android:textColor="@color/black"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
                         android:src="@drawable/fleche" />
-
 
                 </LinearLayout>
 
@@ -266,7 +254,7 @@
                     android:layout_marginStart="56dp"
                     android:background="#33FFFFFF" />
 
-                <!-- Languages -->
+                <!-- A Propos -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -292,15 +280,13 @@
                         android:layout_marginStart="12dp"
                         android:layout_weight="1"
                         android:text="A Propos"
-                        android:textColor="@color/black"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
                         android:src="@drawable/fleche" />
 
                 </LinearLayout>
@@ -310,11 +296,12 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="16dp" />
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="16dp" />
 
-            <!-- eto ny card3 -->
+            <!-- CARD 3 - Quitter -->
             <LinearLayout
                 android:id="@+id/btnExit"
                 android:layout_width="match_parent"
@@ -323,7 +310,6 @@
                 android:orientation="vertical"
                 android:padding="8dp">
 
-                <!-- quitter -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -332,16 +318,16 @@
                     android:padding="12dp">
 
                     <FrameLayout
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:background="@drawable/circle_yellow">
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/circle_yellow">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/quitter" />
-                </FrameLayout>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/quitter" />
+                    </FrameLayout>
 
                     <TextView
                         android:layout_width="0dp"
@@ -349,32 +335,23 @@
                         android:layout_marginStart="12dp"
                         android:layout_weight="1"
                         android:text="Quitter"
-                        android:textColor="@color/black"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
                         android:src="@drawable/fleche" />
 
-
                 </LinearLayout>
-
-                <!-- Text Size -->
-
-                <!-- Languages -->
 
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
-
-
-    <!--bootom bar ny eto-->
+    <!-- Bottom Bar -->
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -421,8 +398,6 @@
                 android:src="@drawable/engineer" />
         </LinearLayout>
 
-
     </RelativeLayout>
-
 
 </RelativeLayout>

@@ -3,11 +3,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/background"
     android:clipChildren="false"
     android:clipToPadding="false">
 
-    <!-- CONTENU PRINCIPAL -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,14 +15,13 @@
         android:padding="16dp"
         android:baselineAligned="false">
 
-        <!-- LOGO EN HAUT À GAUCHE -->
         <ImageView
             android:layout_width="160dp"
             android:layout_height="40dp"
             android:layout_gravity="start"
             android:contentDescription="OptiDoc Logo"
             android:scaleType="fitStart"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo_adaptive" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -38,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Actions rapides"
-            android:textColor="#000000"
+            android:textColor="@color/text_primary"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"/>
@@ -50,7 +48,6 @@
             android:layout_marginTop="10dp"
             android:weightSum="2">
 
-            <!-- Bouton Galerie -->
             <LinearLayout
                 android:id="@+id/btnGalerie"
                 android:layout_width="0dp"
@@ -73,11 +70,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Galerie"
-                    android:textColor="#000000"
+                    android:textColor="@color/text_primary"
                     android:textStyle="bold"/>
             </LinearLayout>
 
-            <!-- Bouton Scanner -->
             <LinearLayout
                 android:id="@+id/btnScanner"
                 android:layout_width="0dp"
@@ -100,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scanner"
-                    android:textColor="#000000"
+                    android:textColor="@color/text_primary"
                     android:textStyle="bold"/>
             </LinearLayout>
         </LinearLayout>
@@ -109,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Modele recommande"
-            android:textColor="#000000"
+            android:textColor="@color/text_primary"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"/>
@@ -133,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Biologie"
-                android:textColor="#000000"
+                android:textColor="@color/text_primary"
                 android:layout_marginStart="12dp"/>
         </LinearLayout>
 
@@ -141,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Posters récents"
-            android:textColor="#000000"
+            android:textColor="@color/text_primary"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"/>
@@ -174,20 +170,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Giraffe.pdf"
-                    android:textColor="#000000"
+                    android:textColor="@color/text_primary"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1 Pages"
-                    android:textColor="#777777"/>
+                    android:textColor="@color/text_secondary"/>
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- BOTTOM BAR -->
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -239,7 +234,6 @@
                 android:contentDescription="settings"/>
         </LinearLayout>
 
-        <!-- EFFET CREUX -->
         <View
             android:layout_width="70dp"
             android:layout_height="70dp"
@@ -248,7 +242,6 @@
             android:background="@drawable/notch_bg"
             android:elevation="6dp"/>
 
-        <!-- BOUTON CAMERA -->
         <ImageView
             android:id="@+id/btnCamera"
             android:layout_width="50dp"

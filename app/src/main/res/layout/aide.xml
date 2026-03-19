@@ -1,52 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F8F8F8"
+    android:background="@color/background"
     android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <TextView
+    <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OptiDoc"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="18sp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo_adaptive"
+        android:scaleType="fitStart"
+        android:contentDescription="OptiDoc Logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"/>
+
     <TextView
         android:id="@+id/Conseil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Conseils d'identification"
-        android:textColor="@color/black"
+        android:textColor="@color/text_primary"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/ConseilText"
         android:text="créez des espaces où vous pouvez positionner et développer votre capture"
         android:textAlignment="center"
         android:textSize="16dp"
-        android:textColor="@color/black"
+        android:textColor="@color/text_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/Conseil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/imgMaki"
@@ -65,7 +60,6 @@
             android:src="@drawable/maki" />
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/imgYes"
         android:layout_width="45dp"
@@ -83,7 +77,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/accepte" />
     </androidx.cardview.widget.CardView>
-
 
     <androidx.cardview.widget.CardView
         android:id="@+id/imgMultiEspeces"
@@ -122,7 +115,6 @@
             android:src="@drawable/croix" />
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/imgTropLoin"
         android:layout_width="110dp"
@@ -141,7 +133,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/loin" />
     </androidx.cardview.widget.CardView>
-
 
     <androidx.cardview.widget.CardView
         android:id="@+id/imgNo2"
@@ -181,7 +172,6 @@
             android:src="@drawable/troppres" />
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/imgNo3"
         android:layout_width="35dp"
@@ -198,7 +188,6 @@
             android:src="@drawable/croix" />
     </androidx.cardview.widget.CardView>
 
-    <!--TextKeli ambanini sary-->
     <TextView
         android:layout_width="110dp"
         android:layout_height="25dp"
@@ -206,7 +195,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="30dp"
         android:text="Multi-espèces"
-        android:textColor="@color/black"
+        android:textColor="@color/text_primary"
         android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/textView"
@@ -219,7 +208,7 @@
         android:layout_height="25dp"
         android:layout_marginTop="4dp"
         android:text="Trop loin"
-        android:textColor="@color/black"
+        android:textColor="@color/text_primary"
         android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -233,14 +222,13 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:text="Trop près"
-        android:textColor="@color/black"
+        android:textColor="@color/text_primary"
         android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/TropPres"
         app:layout_constraintTop_toBottomOf="@+id/TropPres" />
 
-    <!--bouton no eto-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
         android:layout_width="350dp"
@@ -256,4 +244,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

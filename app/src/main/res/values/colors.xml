@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="primary">#CFE0E6</color>
-    <color name="secondary">#162A7C</color>
-
-    <color name="bg_dark">#1A1033</color>
-    <color name="card_dark">#241848</color>
-    <color name="purple_icon">#7B5EA7</color>
-    <color name="orange">#FF8C00</color>
-    <color name="pink">#E91E8C</color>
-    <color name="teal">#00BCD4</color>
-    <color name="text_white">#FFFFFF</color>
-    <color name="text_grey">#AAAAAA</color>
-
-    <color name="splash_background">#FFFFFF</color>
-    <color name="primary_color">#2196F3</color>
-    <color name="text_color">#333333</color>
-
+    <color name="primary">#FFFFFF</color>
+    <color name="primary_color">#4CAF50</color>
+    <color name="background">#F5F5F5</color>
+    <color name="card_bg">#E6ECF2</color>
+    <color name="bottom_bar">#DCD6F7</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="card_result_green">#E8F5E8</color>
+    <color name="card_result_blue">#E3F2FD</color>
+    <color name="card_result_orange">#FFF3E0</color>
 </resources>
