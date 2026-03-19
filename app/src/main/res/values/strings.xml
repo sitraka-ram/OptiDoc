@@ -20,6 +20,5 @@
     <string-array name="langues_array">
         <item>Français</item>
         <item>Malagasy</item>
-        <item>Anglais</item>
     </string-array>
 </resources>
