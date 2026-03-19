@@ -33,9 +33,9 @@ android {
     }
 
     // ⚠️ IMPORTANT : empêcher la compression du modèle .tflite
-    aaptOptions {
-        noCompress "tflite"
-    }
+    //aaptOptions {
+      //  noCompress "tflite"
+    //}
     //Atreto
 }
 
@@ -57,14 +57,14 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
 
     // TensorFlow Lite — reconnaissance d'image
-    implementation 'org.tensorflow:tensorflow-lite:2.14.0'
-    implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
-    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.4.4'
+    //implementation 'org.tensorflow:tensorflow-lite:2.14.0'
+    //implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
+    //implementation 'org.tensorflow:tensorflow-lite-task-vision:0.4.4'
 
     // Room — base de données locale
-    def room_version = "2.6.1"
-    implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
+    //def room_version = "2.6.1"
+  //  implementation "androidx.room:room-runtime:$room_version"
+   // annotationProcessor "androidx.room:room-compiler:$room_version"
 
     //Atreto
 
