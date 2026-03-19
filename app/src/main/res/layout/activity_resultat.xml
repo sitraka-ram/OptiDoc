@@ -65,6 +65,7 @@
                 android:padding="16dp">
 
                 <TextView
+                    android:id="@+id/NomAnimal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lemur maki"
@@ -88,6 +89,7 @@
                         android:textColor="#666666" />
 
                     <TextView
+                        android:id="@+id/nomScientifique"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lemur catta"
@@ -102,6 +104,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -110,6 +113,7 @@
                         android:textColor="#666666" />
 
                     <TextView
+                        android:id="@+id/confianceIa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="75%"
@@ -231,6 +235,7 @@
                     android:layout_marginBottom="4dp" />
 
                 <TextView
+                    android:id="@+id/habitat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Forêts tropicales de Madagascar"

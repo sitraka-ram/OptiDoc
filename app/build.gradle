@@ -31,6 +31,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+
+    // ⚠️ IMPORTANT : empêcher la compression du modèle .tflite
+    aaptOptions {
+        noCompress "tflite"
+    }
+    //Atreto
 }
 
 dependencies {
@@ -44,6 +50,26 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+
+    // Glide (chargement d'images)
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // TensorFlow Lite — reconnaissance d'image
+    implementation 'org.tensorflow:tensorflow-lite:2.14.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
+    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.4.4'
+
+    // Room — base de données locale
+    def room_version = "2.6.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //Atreto
+
+
+
 
     // ✅ NOUVEAU : Dépendance pour le splash screen (Android 12+)
     implementation 'androidx.core:core-splashscreen:1.0.1'
