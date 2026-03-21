@@ -5,12 +5,29 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:src="@drawable/logo_adaptive"
-        android:foregroundGravity="center"
-        android:layout_marginTop="25dp"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:src="@drawable/logo_adaptive"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitStart"
+            android:contentDescription="OptiDoc Logo"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="ISPM Logo"
+            android:scaleType="fitEnd"
+            android:src="@drawable/logoispm" />
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
